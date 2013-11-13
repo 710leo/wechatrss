@@ -1,0 +1,12 @@
+$def with (list)
+<?xml version="1.0"?>
+<title>WechatRss</title>
+<link>http://wx.x2know.org</link>
+<description>WechatRSS</description>
+<channel>
+    $for info in list:
+	<item>
+	    <title>$info.essay_title</title>
+	    <link>$info.essay_url</link>
+	</item>
+</channel>

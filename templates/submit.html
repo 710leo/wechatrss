@@ -1,0 +1,47 @@
+$def with (title="submit")
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>$title</title>
+</head>
+<body>
+<br /><br /><br />
+		<form class="form-horizontal" action="/submit" method="post">
+	        <fieldset>
+		    	<div class="control-group">
+		            <label class="control-label" for="username">公众账号  ID</label>
+		            <div class="controls">
+		            	<input class="input-text" name="id" type="text" size="30" maxlength="30" value="" />
+		            </div>
+		        </div>
+		    	<div class="control-group">
+		            <label class="control-label" for="username">公众账号名称</label>
+		            <div class="controls">
+		            	<input class="input-text" name="name" type="text" size="30" maxlength="70" value="" />
+		            </div>
+		        </div>
+		    	<div class="control-group">
+		            <label class="control-label" for="lang">帐号介绍</label>
+		            <div class="controls">
+		            	<textarea name="desc" class="input-xxlarge" rows="7"></textarea>
+		            </div>
+		        </div>
+		        <div class="control-group">
+		        	<div class="controls">
+		        		<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LeyWs8SAAAAAJr2UCzgKy1nBBp9jviTrgLG_uTp"></script>
+
+	<noscript>
+  		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LeyWs8SAAAAAJr2UCzgKy1nBBp9jviTrgLG_uTp" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript> 
+		        	</div>
+		        </div>
+				<div class="form-actions">
+					<button name="submit" type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</fieldset>
+		</form>
+		<hr>
+</body>
+</html>

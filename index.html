@@ -1,0 +1,25 @@
+$def with (results)
+<div  style="background-image: url(static/img/ptrn.jpg)">
+<div class="row">
+	<div class="span2">
+		<div id="sidebar">
+		</div> 
+	</div>
+	<div class="span10">
+		<div id="content">
+		<br /><br /><br /><br /><br />
+			<div class="row-fluidd" style="display: block; width: 1015px; height: 170px;">
+			$for info in results:
+				<div class="spans" style="width: 105px; height: 130px;">
+					<div class="tip">
+					<a href="/rss/$info.id"><img alt="140x140" src="/static/upload/$info.account_pic" class="img-circle" style="position:absolute;" width="100px"height="100px"></a>
+					</div>
+					<a href="/account/$info.id/1"><span>$info.account_name</span></a>
+					<a class="tipMask" href="/rss/$info.id"></a>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+</div>
+<body>

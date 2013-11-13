@@ -1,0 +1,78 @@
+$def with (title="add_accuont")
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>$title</title>
+</head>
+<body>
+<!--<form id="add" method="post" enctype="multipart/form-data" action="/add">
+	id:    	<input type="text" size="80" name="wx_id" /><br/>
+	name:  	<input type="text" name="wx_name"><br/>
+	author:	<input type="text" name="author"><br/>
+	touxiao:<input type="file" name="myfile"><br/>
+	erweima:<input type="text" name="pic"><br/>
+	addr:	<input type="text" name="addr"><br/>
+	<input type="submit" name="submit" value="add">
+</form>-->
+<!--==================================================================-->
+
+<br /><br /><br />
+		<form class="form-horizontal" enctype="multipart/form-data" action="/add" method="post">
+	        <fieldset>
+		    	<div class="control-group">
+		            <label class="control-label" for="username">公众账号  ID</label>
+		            <div class="controls">
+		            	<input class="input-text" name="wx_id" type="text" size="30" maxlength="30" value="" />
+		            </div>
+		        </div>
+		    	<div class="control-group">
+		            <label class="control-label" for="username">公众账号名称</label>
+		            <div class="controls">
+		            	<input class="input-text" name="wx_name" type="text" size="30" maxlength="70" value="" />
+		            </div>
+		        </div>
+				<div class="control-group">
+		            <label class="control-label" for="username">作者</label>
+		            <div class="controls">
+		            	<input class="input-text" name="author" type="text" size="30" maxlength="70" value="" />
+		            </div>
+		        </div>
+				<div class="control-group">
+		            <label class="control-label" for="username">头像</label>
+		            <div class="controls">
+		            	<input class="input-text" name="myfile" type="file" size="30" maxlength="200" value="" />
+		            </div>
+		        </div>
+				<div class="control-group">
+		            <label class="control-label" for="username">二维码</label>
+		            <div class="controls">
+		            	<input class="input-text" name="pic" type="text" size="30" maxlength="200" value="" />
+		            </div>
+		        </div>
+				<div class="control-group">
+		            <label class="control-label" for="username">地址</label>
+		            <div class="controls">
+		            	<input class="input-text" name="addr" type="text" size="30" maxlength="100" value="" />
+		            </div>
+		        </div>
+		        <div class="control-group">
+		        	<div class="controls">
+		        		<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LeyWs8SAAAAAJr2UCzgKy1nBBp9jviTrgLG_uTp"></script>
+
+	<noscript>
+  		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LeyWs8SAAAAAJr2UCzgKy1nBBp9jviTrgLG_uTp" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript> 
+		        	</div>
+		        </div>
+				<div class="form-actions">
+					<button name="submit" type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</fieldset>
+		</form>
+		<hr>
+
+<!--==================================================================-->
+</body>
+</html>

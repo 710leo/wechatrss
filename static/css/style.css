@@ -1,0 +1,48 @@
+.row-fluidd{
+	overflow: hidden;
+	height: 170px;
+	width: 1015px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.spans{
+	position: relative;
+	float: left;
+	margin: 15px 20px 25px;
+	width: 105px;
+	height: 130px;
+}
+
+.tip{
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 6px;
+	left: 5px;
+	background-size: 100px 100px;
+	overflow: hidden;
+}
+
+.tipMask {
+	width: 112px;
+	height: 112px;
+	top: 0;
+	left: 0;
+	background: url(../img/tipMask2.png) no-repeat scroll;
+	background-image: url(../img/tipMask.png);
+	position: absolute;
+	outline: none;
+}
+
+span {
+	display: block;
+	width: 105px;
+	height: 20px;
+	padding-top: 120px;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+	font-size: 11px;
+}

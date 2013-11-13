@@ -1,0 +1,41 @@
+$def with (id,posts,pages,total,lastpage,nextpage)
+
+<div class="row">
+	<div class="span2">
+		<div id="sidebar">
+			<ul id="yw2" class="nav nav-list"><li class="nav-header">公众帐号</li><li><a href="#"><li class="icon-book"></li>555</a></li> 
+		</div>
+	</div>
+<div class="span10">
+	<div id="content">
+		<div id="yw0" class="grid-view">
+			<table class="items table">
+			<thead>
+				<tr>
+					<th id="yw0_c0">Time</th><th id="yw0_c1">Title</th>
+				</tr>
+			</thead>
+			<tbody>
+			$for post in posts:
+				<tr class="odd">
+				<td>$post.essay_date</td>
+				<td><a target="_blank" href="">$post.essay_title</a></td></tr>
+
+			</tbody>
+			</table>
+			<div class="pagination">
+			<ul id="yw1" class="yiiPager"><li class="first"><a href="/account/$id/1">首页</a></li>
+			    $if lastpage>1:
+				<li class="previous"><a href="/account/$id/$lastpage">上一页</a></li>
+			    $for page in pages:
+				$if page <= total:
+				    <li class="page"><a href="/account/$id/$page">$page</a></li>
+			    $if page+6 < total:
+				 <li class="next"><a href="/account/$id/$nextpage">下一页</a></li>
+			    <li class="last"><a href="/account/$id/$total">末页</a></li>
+</ul>
+</div>
+		</div> 
+	</div> 
+</div>
+</div>

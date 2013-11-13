@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+</head>
+<body>
+<<!--form id="submit" method="post" action="/login">
+	user:   <input type="text" size="80" name="user" /><br/>
+	pass:  	<input type="text" name="password"><br/>
+	<input type="submit" name="submit" value="login">
+</form>-->
+
+<br /><br /><br />
+		<form class="form-horizontal" action="/login" method="post">
+	        <fieldset>
+		    	<div class="control-group">
+		            <label class="control-label" for="username">username</label>
+		            <div class="controls">
+		            	<input class="input-text" name="user" type="text" size="30" maxlength="30" value="" />
+		            </div>
+		        </div>
+		    	<div class="control-group">
+		            <label class="control-label" for="username">password</label>
+		            <div class="controls">
+		            	<input class="input-text" name="password" type="text" size="30" maxlength="70" value="" />
+		            </div>
+		        </div>
+		        <div class="control-group">
+		        	<div class="controls">
+		        		<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LeyWs8SAAAAAJr2UCzgKy1nBBp9jviTrgLG_uTp"></script>
+
+	<noscript>
+  		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LeyWs8SAAAAAJr2UCzgKy1nBBp9jviTrgLG_uTp" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript> 
+		        	</div>
+		        </div>
+				<div class="form-actions">
+					<button name="submit" type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</fieldset>
+		</form>
+		<hr>
+
+
+</body>
+</html>
