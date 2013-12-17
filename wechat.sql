@@ -71,7 +71,7 @@ CREATE TABLE `account_admin` (
 
 LOCK TABLES `account_admin` WRITE;
 /*!40000 ALTER TABLE `account_admin` DISABLE KEYS */;
-INSERT INTO `account_admin` VALUES (1,','','');
+INSERT INTO `account_admin` VALUES (1,'','','');
 /*!40000 ALTER TABLE `account_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
